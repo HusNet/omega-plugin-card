@@ -1,5 +1,5 @@
 <?php
-namespace Hunset\OmegaPlugin\BS5Card\Http\Controllers\Overt;
+namespace Husnet\OmegaPlugin\BS5Card\Http\Controllers\Overt;
 
 use rohsyl\OmegaCore\Utils\Common\Plugin\Controllers\OvertPluginController as Controller;
 
