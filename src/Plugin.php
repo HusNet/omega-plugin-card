@@ -5,7 +5,7 @@ use Hunset\OmegaPlugin\BS5Card\Http\Controllers\Overt\PluginController;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Form\PluginFormFactory;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Plugin as OmegaPlugin;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Type\TextSimple\TextSimple;
-use rohsyl\OmegaCore\Utils\Common\Plugin\Type\RadioButtons\RadioButtons;
+use rohsyl\OmegaCore\Utils\Common\Plugin\Type\Checkbox\Checkbox;
 
 class Plugin extends OmegaPlugin
 {
