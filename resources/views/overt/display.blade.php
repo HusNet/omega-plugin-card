@@ -1,13 +1,11 @@
 <div class="card">
 	<div class="card-header">
-		BS 5 Card plugin
+		{{ @$header }}
 	</div>
 	<div class="card-body">
-		<h5 class="card-title">Hello there</h5>
-		<p class="card-text">General Kenobi</p>
-		<a href="#" class="btn btn-primary">Get your light saber</a>
+		{{ @$content }}
 	</div>
-	<div class="card-footer text-muted">
-		In a galaxy far far away...
+	<div class="card-footer {{ $footerMute ? 'text-muted' : '' }}">
+		{{ @$footer }}
 	</div>
 </div>

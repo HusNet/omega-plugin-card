@@ -6,4 +6,7 @@ use rohsyl\OmegaCore\Utils\Common\Plugin\Controllers\AdminPluginController as Co
 class PluginController extends Controller
 {
 
+    public function index() {
+
+    }
 }
