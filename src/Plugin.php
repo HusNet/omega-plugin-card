@@ -37,7 +37,7 @@ class Plugin extends OmegaPlugin
             $builder->entry('header', TextSimple::class, null, 'Card Title', null, 0, false);
             $builder->entry('content', TextSimple::class, null, 'Card Content', null, 0, false);
             $builder->entry('footer', TextSimple::class, null, 'Card Footer', null, 0, false);
-            $builder->entry('footerMute', RadioButtons::class, null, 'Footer text muted', null, 0, false);
+            $builder->entry('footerMute', RadioButtons::class, ["muted" => 0], 'Footer text muted', null, 0, false);
 			// ...
         });
 

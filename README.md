@@ -3,7 +3,9 @@ Bootstrap 5 Card Plugin for [OmegaCMS](https://github.com/rohsyl/omega-eros)
 
 ## Getting started 
 
-Edit files and replace [PluginName] by the name of your plugin.
+On your project run : 
+
+`php artisan omega:plugin-install "Card Bootstrap 5"`
 
 ## Documentation
 
