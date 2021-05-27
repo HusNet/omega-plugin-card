@@ -32,6 +32,6 @@ class ServiceProvider extends SP
         // load views
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'omega-plugin-bs5card');
 
-        PluginManager::register(Plugin::NAME, new Plugin());
+        PluginManager::register(Plugin::class, new Plugin());
     }
 }
