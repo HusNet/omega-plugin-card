@@ -1,5 +1,5 @@
 <?php
-namespace rohsyl\OmegaPlugin\[PluginName];
+namespace Husnet\OmegaPlugin\BS5Card;
 
 use rohsyl\OmegaCore\Utils\Common\Plugin\Form\PluginFormFactory;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Plugin as OmegaPlugin;
@@ -7,7 +7,7 @@ use rohsyl\OmegaCore\Utils\Common\Plugin\Type\TextSimple\TextSimple;
 
 class Plugin extends OmegaPlugin
 {
-    const NAME = '[PluginName]';
+    const NAME = 'BS5Card';
 
     /**
      * Here name your plugin
@@ -27,7 +27,7 @@ class Plugin extends OmegaPlugin
     private function createForm() {
 
         $this->makeForm(function(PluginFormFactory $builder) {
-            $builder->form('[title]', true, true);
+            $builder->form('Bootstrap 5 card', true, true);
 			// ...
         });
 

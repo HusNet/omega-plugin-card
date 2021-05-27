@@ -1,5 +1,5 @@
-# omega-plugin-skeleton
-Skeleton for creating template for OmegaCMS Eros
+# omega-plugin-card
+Bootstrap 5 Card Plugin for [OmegaCMS](https://github.com/rohsyl/omega-eros)
 
 ## Getting started 
 

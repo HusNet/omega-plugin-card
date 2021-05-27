@@ -1,11 +1,11 @@
 {
-    "name": "rohsyl/omega-plugin-skeleton",
-    "description": "OmegaCMS Plugin Skeleton",
+    "name": "hunet/omega-plugin-bs5card",
+    "description": "Bootstrap 5 Card for OmegaCMS",
     "license": "GPL-3.0",
     "authors": [
         {
-            "name": "rohsyl",
-            "email": "syzin12@gmail.com"
+            "name": "Husnet",
+            "email": "huser.gaetan@hotmail.com"
         }
     ],
     "minimum-stability": "stable",
@@ -23,13 +23,13 @@
     },
     "autoload": {
         "psr-4": {
-            "rohsyl\\OmegaPlugin\\[PluginName]\\": "src"
+            "Husnet\\OmegaPlugin\\BS5Card\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "rohsyl\\OmegaPlugin\\[PluginName]\\ServiceProvider"
+                "Husnet\\OmegaPlugin\\BS5Card\\ServiceProvider"
             ]
         }
     }
