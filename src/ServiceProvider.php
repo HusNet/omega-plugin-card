@@ -1,5 +1,5 @@
 <?php
-namespace Husnet\OmegaPlugin\BS5Card;
+namespace Husnet\OmegaPlugin\Card;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Blade;
@@ -16,11 +16,11 @@ class ServiceProvider extends SP
     public function boot() {
 
         $this->publishes([
-            __DIR__.'/../resources/views/overt' => resource_path('views/vendor/omega-plugin-bs5card/overt'),
+            __DIR__.'/../resources/views/overt' => resource_path('views/vendor/omega-plugin-card/overt'),
         ]);
 
         $this->publishes([
-            __DIR__.'/../public' => public_path('vendor/omega/plugin/bs5card'),
+            __DIR__.'/../public' => public_path('vendor/omega/plugin/card'),
         ], 'public');
 
         // load routes
@@ -30,7 +30,7 @@ class ServiceProvider extends SP
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         // load views
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'omega-plugin-bs5card');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'omega-plugin-card');
 
         PluginManager::register(new Plugin());
     }

@@ -1,6 +1,6 @@
 {
-    "name": "husnet/omega-plugin-bs5card",
-    "description": "Bootstrap 5 Card for OmegaCMS",
+    "name": "husnet/omega-plugin-card",
+    "description": "Card for OmegaCMS",
     "license": "GPL-3.0",
     "authors": [
         {
@@ -23,13 +23,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Husnet\\OmegaPlugin\\BS5Card\\": "src"
+            "Husnet\\OmegaPlugin\\Card\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Husnet\\OmegaPlugin\\BS5Card\\ServiceProvider"
+                "Husnet\\OmegaPlugin\\Card\\ServiceProvider"
             ]
         }
     }
