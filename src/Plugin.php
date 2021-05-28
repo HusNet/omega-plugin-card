@@ -1,7 +1,7 @@
 <?php
 namespace Husnet\OmegaPlugin\BS5Card;
 
-use Hunset\OmegaPlugin\BS5Card\Http\Controllers\Overt\PluginController;
+use Husnet\OmegaPlugin\BS5Card\Http\Controllers\Overt\PluginController;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Form\PluginFormFactory;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Plugin as OmegaPlugin;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Type\TextSimple\TextSimple;
