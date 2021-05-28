@@ -1,4 +1,4 @@
-<div class="card {{ @$cardClass }}">
+<div id="{{ preg_replace("/[\s_]/", "-", preg_replace("/[\s-]+/", " ", preg_replace("/[^a-z0-9_\s-]/", "", strtolower($header)))) }}" class="card {{ @$cardClass }}">
 	<div class="card-header {{ @$headerClass }}">
 		{{ @$header }}
 	</div>
