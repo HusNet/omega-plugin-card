@@ -32,20 +32,15 @@ class Plugin extends OmegaPlugin
     }
 
     private function createForm() {
-
-        $radioOptions = [
-            "default" => 0,
-            "options" => [
-
-            ]
-        ];
-
-        $this->makeForm(function(PluginFormFactory $builder) use ($radioOptions) {
+        $this->makeForm(function(PluginFormFactory $builder) {
             $builder->form('Bootstrap 5 card', true, true);
-            $builder->entry('header', TextSimple::class, null, 'Card Title', null, 0, false);
-            $builder->entry('content', TextRich::class, null, 'Card Content', null, 0, false);
-            $builder->entry('footer', TextSimple::class, null, 'Card Footer', null, 0, false);
-            $builder->entry('footerMute', Checkbox::class, ["checked" => false], 'Footer text muted', null, 0, false);
+            $builder->entry('cardClass', TextSimple::class, null, 'Card classes', null, 0, false);
+            $builder->entry('header', TextSimple::class, null, 'Card title', null, 0, false);
+            $builder->entry('headerClass', TextSimple::class, null, 'Card title classes', null, 0, false);
+            $builder->entry('content', TextRich::class, null, 'Card content', null, 0, false);
+            $builder->entry('contentClass', TextSimple::class, null, 'Card content classes', null, 0, false);
+            $builder->entry('footer', TextSimple::class, null, 'Card footer', null, 0, false);
+            $builder->entry('footerClass', TextSimple::class, null, 'Card footer classes', null, 0, false);
 			// ...
         });
 
