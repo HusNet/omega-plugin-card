@@ -7,6 +7,8 @@ On your project run :
 
 `php artisan omega:plugin-install Card`
 
+If you want to modify default layout copy [display.blade.php](resources/views/overt/display.blade.php) into your theme template directory in `template/card/default.blade.php`
+
 ## Documentation
 
 TODO
