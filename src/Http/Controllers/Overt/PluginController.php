@@ -7,6 +7,6 @@ class PluginController extends Controller
 {
     public function display($param, $data) {
 
-        return view('omega-plugin-card::overt.display')->with($data);
+        return $this->view('omega-plugin-card::overt.display')->with($data);
     }
 }

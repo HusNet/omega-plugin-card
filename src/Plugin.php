@@ -6,10 +6,11 @@ use rohsyl\OmegaCore\Utils\Common\Plugin\Form\PluginFormFactory;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Plugin as OmegaPlugin;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Type\TextSimple\TextSimple;
 use rohsyl\OmegaCore\Utils\Common\Plugin\Type\TextRich\TextRich;
+use rohsyl\OmegaCore\Utils\Common\Plugin\Type\HtmlEditor\HtmlEditor;
 
 class Plugin extends OmegaPlugin
 {
-    const NAME = 'Card';
+    const NAME = 'card';
 
     /**
      * Here name your plugin
@@ -32,9 +33,9 @@ class Plugin extends OmegaPlugin
 
     private function createForm() {
         $this->makeForm(function(PluginFormFactory $builder) {
-            $builder->form('Card', true, true);
+            $builder->form('card', true, true);
             $builder->entry('header', TextSimple::class, null, 'Card title', null, 0, false);
-            $builder->entry('content', TextRich::class, null, 'Card content', null, 0, false);
+            $builder->entry('content', HtmlEditor::class, null, 'Card content', null, 0, false);
             $builder->entry('footer', TextSimple::class, null, 'Card footer', null, 0, false);
         });
 
