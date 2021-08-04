@@ -35,7 +35,7 @@ class Plugin extends OmegaPlugin
         $this->makeForm(function(PluginFormFactory $builder) {
             $builder->form('card', true, true);
             $builder->entry('header', TextSimple::class, null, 'Card title', null, 0, false);
-            $builder->entry('content', HtmlEditor::class, null, 'Card content', null, 0, false);
+            $builder->entry('content', TextRich::class, null, 'Card content', null, 0, false);
             $builder->entry('footer', TextSimple::class, null, 'Card footer', null, 0, false);
         });
 

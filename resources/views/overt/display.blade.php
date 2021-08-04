@@ -6,7 +6,7 @@
 	@endisset
 	@isset($content)
 		<div class="card-body">
-			{{ @$content }}
+			{!! @$content !!}
 		</div>
 	@isset($footer)
 	@endisset
